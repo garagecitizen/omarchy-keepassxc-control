@@ -1,0 +1,14 @@
+---
+description: Re-read SPEC.md before every change in this plugin
+alwaysApply: true
+---
+
+# Re-read SPEC.md before every change
+
+Before creating, editing, or deleting any file in this plugin:
+
+1. Read `SPEC.md` in full **in this turn**.
+2. Do not rely on memory from an earlier turn.
+3. If the change and SPEC.md disagree, SPEC.md wins.
+
+Do not add behavior that is not written in SPEC.md.

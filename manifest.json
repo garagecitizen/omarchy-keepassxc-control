@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "keepassxc.control",
+  "name": "KeePassXC Control",
+  "version": "0.1.0",
+  "author": "Mike",
+  "license": "MIT",
+  "description": "A focused KeePassXC search and copy popup for Omarchy.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "KeePassXC Control",
+    "description": "Search one KeePassXC database and copy a password or username.",
+    "category": "Security",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "databasePath": "",
+      "idleTimeoutSec": 180,
+      "clipboardTimeoutSec": 30
+    },
+    "schema": [
+      {
+        "key": "databasePath",
+        "type": "string",
+        "label": "KeePassXC database path",
+        "defaultValue": ""
+      },
+      {
+        "key": "idleTimeoutSec",
+        "type": "integer",
+        "label": "Vault idle timeout (seconds)",
+        "min": 30,
+        "max": 3600,
+        "step": 30,
+        "defaultValue": 180
+      },
+      {
+        "key": "clipboardTimeoutSec",
+        "type": "integer",
+        "label": "Clipboard timeout (seconds)",
+        "min": 5,
+        "max": 120,
+        "step": 5,
+        "defaultValue": 30
+      }
+    ]
+  }
+}
